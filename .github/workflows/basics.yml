@@ -17,3 +17,4 @@ jobs:
     needs: first-job
     steps:
       - run: echo Third job sequential
+      - run: gh issue create --title "basics workflow issue" --body "test creating issues from workflow"
