@@ -18,3 +18,5 @@ jobs:
     steps:
       - run: echo Third job sequential
       - run: gh issue create --title "basics workflow issue" --body "test creating issues from workflow"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
